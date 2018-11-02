@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gcp-client:
+    build: 
+      context: ./docker
+    volumes:
+      - ./ubuntu:/ubuntu:cached
+    tty: true
